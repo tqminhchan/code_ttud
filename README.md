@@ -1,1 +1,1 @@
-# code_ttud
+# code_applied_algorithm
