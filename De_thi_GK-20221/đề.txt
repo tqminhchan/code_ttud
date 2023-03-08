@@ -1,7 +1,7 @@
 Bài 1 :
-Cho mot day gom các so nguyen a1, a2, .... an. Mot day con k-phan tu cua day da cho  
+Cho một dãy gồm các số nguyên a1, a2, .... an. Một dãy con k-phần tử của dãy đã cho  
 là một dãy gồm k phần tử liên tiếp ai,ai+1....ai+k-1. Trọng số của dãy k-phần tử là tổng của các phần tử tttrong dãy con
-này. Cho hai số nguyên dương k và m. Tính Q là số lượng dãy con k-phần tử sao cho trognj số của mỗi dãy con đều bằng m 
+này. Cho hai số nguyên dương k và m. Tính Q là số lượng dãy con k-phần tử sao cho trọng số của mỗi dãy con đều bằng m 
 . Dòng 1 chứa 3 số nguyên dương n, k, m (1<=n<=10^5, 1<=k<=n/2, 1<=m<=10^6)
 . Dòng 2 : a1, a2 , ...an(1<=ai<=10000) output:
 . ghi ra giá trị Q 
@@ -10,7 +10,7 @@ VD
 3 2 4 3 2 1      
 
 ----------------------------------------------------------------------------------------------------------------------------------------------
-bài 2:
+Bài 2:
 Cho 1 tập gồm các số nguyên a1,a2..an. thực hiên trên tập số nguyên đã cho một tập thao tác gồm các loại sau:
  -) insert x: thêm 1 phần tử giá trị x vào tập
  -) delete-max: xóa khỏi tập và trả về giá trị phần tử lớn nhất trong tập
