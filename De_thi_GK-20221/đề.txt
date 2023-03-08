@@ -1,7 +1,7 @@
- bài 1 :
-cho mot day gom các so nguyen a1, a2, .... an. Mot day con k-phan tu cua day da cho  
+Bài 1 :
+Cho mot day gom các so nguyen a1, a2, .... an. Mot day con k-phan tu cua day da cho  
 là một dãy gồm k phần tử liên tiếp ai,ai+1....ai+k-1. Trọng số của dãy k-phần tử là tổng của các phần tử tttrong dãy con
-này. Cho hai số nguyên dương k và m. Tính Q là số lượng dãy con k-phần tử sao cho trognj số của mỗi dãy con đều bằng m input 
+này. Cho hai số nguyên dương k và m. Tính Q là số lượng dãy con k-phần tử sao cho trognj số của mỗi dãy con đều bằng m 
 . Dòng 1 chứa 3 số nguyên dương n, k, m (1<=n<=10^5, 1<=k<=n/2, 1<=m<=10^6)
 . Dòng 2 : a1, a2 , ...an(1<=ai<=10000) output:
 . ghi ra giá trị Q 
@@ -9,8 +9,9 @@ VD
 6 3 9                              Q= 3
 3 2 4 3 2 1      
 
-
-bài 2: cho 1 tập gồm các số nguyên a1,a2..an. thực hiên trên tập số nguyên đã cho một tập thao tác gồm các loại sau:
+----------------------------------------------------------------------------------------------------------------------------------------------
+bài 2:
+Cho 1 tập gồm các số nguyên a1,a2..an. thực hiên trên tập số nguyên đã cho một tập thao tác gồm các loại sau:
  -) insert x: thêm 1 phần tử giá trị x vào tập
  -) delete-max: xóa khỏi tập và trả về giá trị phần tử lớn nhất trong tập
 input: - dòng 1: số nguyên dương 1< n <10000
@@ -34,8 +35,8 @@ vd: in: 10                             out: 10
         *
 
 
-
-BÀI 3
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+BÀI 3:
 cho một dãy gồm n số nguyên phân biệt ( đôi một khác nhau) a1, a2, ...an. Cho hai số nguyên 
 dương A và  . Tính Q là số tập con của dãy n số nguyên đã cho dao cho tổng các phần tử trong
 mỗi tập con lớn hơn hoặc bằng A và nhỏ hơn hoặc bằng B. 
@@ -45,8 +46,9 @@ INPPUT
 OUTPUT
 ghi ra giá trị của Q 
 
-
-bài 4: cho 1 dãy gồm các số nguyên dương a1, a2,..an. tìm tập con của dãy đã cho sao cho tổng các phần tử trong tập con là 
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+Bài 4: 
+Cho 1 dãy gồm các số nguyên dương a1, a2,..an. tìm tập con của dãy đã cho sao cho tổng các phần tử trong tập con là 
  lớn nhất và trong tập con không chứa 2 phần tử liên tiếp nào của dãy đã cho
 input: dòng 1 chứa 1 số nguyên dương n <=100000
        dòng 2 chứa a1, a2, ... , an (1<ai<1000)
