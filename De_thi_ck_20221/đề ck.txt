@@ -1,14 +1,17 @@
 Bài 1: Steiner Tree
- 1 mạng truyền thông G bao gồm N máy chủ 1,2,..N đc kết nối với nhau bởi M đường truyền (2 chiều). giữa 2 máy chủ i và j có thể có đường truyền hoặc ko có. Trong trg hợp giữa 2 máy chủ i, j có đg truyền thì c(i,j) là chi phí thuê đg truyền này.
-Một công ti cần tính toán phương án thuê 1 số đg truyền nào đó của mạng G để kết nối liên thông 1 số máy chủ trong tập R ( R là tập con của (1,2,3,...N)). hãy tính toán phương án thuê đg truyền với tổng chi phí thuê ít nhất.
-Input: - dòng 1: 2 số nguyên dg N, M
-       - dòng 2 đến dòng M: mỗi dòng ghi 3 số nguyên dương i,j,w: có đg truyền giữa i và j với chi phí thuê là w (w=c(i,j))
-       - dòng M+2: ghi số nguyên dương K
-       - dòng M+3: ghi K số nguyên dương đôi một khác nhau là chỉ số của các máy chủ trong R
+ 1 mạng truyền thông G bao gồm N máy chủ 1,2,..N đc kết nối với nhau bởi M đường truyền (2 chiều). giữa 2 máy chủ i và j có thể có đường truyền hoặc ko có. 
+Trong trường hợp giữa 2 máy chủ i, j có đg truyền thì c(i,j) là chi phí thuê đường truyền này.
+Một công ti cần tính toán phương án thuê 1 số đg truyền nào đó của mạng G để kết nối liên thông 1 số máy chủ trong tập R ( R là tập con của (1,2,3,...N)). 
+Hãy tính toán phương án thuê đường truyền với tổng chi phí thuê ít nhất.
+Input: - Dòng 1: 2 số nguyên dg N, M
+       - Dòng 2 đến dòng M: mỗi dòng ghi 3 số nguyên dương i,j,w: có đg truyền giữa i và j với chi phí thuê là w (w=c(i,j))
+       - Dòng M+2: ghi số nguyên dương K
+       - Dòng M+3: ghi K số nguyên dương đôi một khác nhau là chỉ số của các máy chủ trong R
 
-Output: ghi ra tổng chi phí thuê nhỏ nhất tìm đc
+Output: Ghi ra tổng chi phí thuê nhỏ nhất tìm đc
 
-VD: In: 5 8 
+VD: 
+INPUT:  5 8 
         1 2 1
         1 3 2 
         1 5 5 
@@ -19,62 +22,69 @@ VD: In: 5 8
         4 5 8 
         4 
         1 2 3 4 
- out: 10
+OUTPUT: 10
 
-giải thích: thực hiện thuê 3 đường truyền: (1,2), (1,3) và (2,4) với tổng chi phí thuê: 1+2+7=10
+Giải thích: Thực hiện thuê 3 đường truyền: (1,2), (1,3) và (2,4) với tổng chi phí thuê: 1+2+7=10
 
-------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 Bài 2:
  Đọc dữ liệu về các chuyến giao hàng và thực hiện 1 số truy vấn trên dữ liệu này:
-INPUT: dữ liệu vào gồm 3 phần
-1. phần đầu gồm chuỗi các ngày liên tiếp, mỗi ngày trên một dòng theo định dạng YYYY-MM-DD. phần đầu tiên dc kết thúc bởi 1 dòng chứa *
-2. Phần thứ 2 gồm thông tin về các chuyến giao hàng. mỗi dòng mô tả thông tin về 1 chuyến giao hàng: giao cho khách hàng nào với số lượng bao nhiêu và đc giao vào ngày giờ nào, có định dạng sau:   <trip_code> <customer_code> <date> <time> qty
-trong đó: <trip_code>: mã chuyến giao hàng: là 1 xâu kí tự độ dài trong khoảng [5,20].
-          <customer_code>: mã khách hàng: là 1 xâu kí tự độ dài [5,20]
-          <date> <time> : ngày giờ giao hàng của chuyến có mã <trip_code> tới khách hàng có mã <customer_code>, <date> có dịnh dangjg YYYY-MM-DD và <time> có định dạng hh:mm:ss
-          qty: số lượng gói hàng mà chuyến có mã <trip_code> giao tới khách hàng có mã <customer_code>
-Mỗi chuyến giao hàng có thể đi giao tới nhiều khách hàng. thời gian làm việc của 1 chuyến giao hàng đc tính là từ thời điểm ngày giờ sớm nhất (giao khách đầu tiên) đến thời điểm ngày giờ muộn nhất (giao khách cuối) mà chuyến này đã giao hàng cho khách. (chú ý số lg chuyến có thế lên tới 10000 và số lg khách đang đc giao bởi 1 chuyến có thể lên tới 30)
-Phần thứ 2 kết thúc bởi dòng chứa ***
+ 
+INPUT: Dữ liệu vào gồm 3 phần
+  1. phần đầu gồm chuỗi các ngày liên tiếp, mỗi ngày trên một dòng theo định dạng YYYY-MM-DD. phần đầu tiên dc kết thúc bởi 1 dòng chứa *
+  
+  2. Phần thứ 2 gồm thông tin về các chuyến giao hàng. mỗi dòng mô tả thông tin về 1 chuyến giao hàng: giao cho khách hàng nào với số lượng bao nhiêu và đc giao vào 
+ngày giờ nào, có định dạng sau:   <trip_code> <customer_code> <date> <time> qty
+Trong đó: +) <trip_code>: mã chuyến giao hàng: là 1 xâu kí tự độ dài trong khoảng [5,20].
+          +) <customer_code>: mã khách hàng: là 1 xâu kí tự độ dài [5,20]
+          +) <date> <time> : ngày giờ giao hàng của chuyến có mã <trip_code> tới khách hàng có mã <customer_code>, <date> có dịnh dangjg YYYY-MM-DD và <time> 
+             có định dạng hh:mm:ss
+          +) qty: số lượng gói hàng mà chuyến có mã <trip_code> giao tới khách hàng có mã <customer_code>
+ Mỗi chuyến giao hàng có thể đi giao tới nhiều khách hàng. thời gian làm việc của 1 chuyến giao hàng đc tính là từ thời điểm ngày giờ sớm nhất (giao khách đầu tiên) 
+đến thời điểm ngày giờ muộn nhất (giao khách cuối) mà chuyến này đã giao hàng cho khách. (chú ý số lượng chuyến có thế lên tới 10000 và số lượng khách đang được giao bởi 1 chuyến có thể lên tới 30)
+ Phần thứ 2 kết thúc bởi dòng chứa ***
 
-3. Phần thứ 3 chứa các câu truy vấn (số lg câu truy vấn có thể lên 10000). truy vấn bao gồm nhiều dòng, mỗi dòng là thông tin về 1 loại truy vấn
- +) TOTAL_QTY: trả về tổng số lg gói hàng mà tất cả các chuyến giao hàng có trong dữ liệu đã giao
- +) QTY_CUSTOMER <customer_code>: trả về tổng số lg gói hàng đã giao dc cho khách hàng có mã <customer_code>
- +) QTY_MAX_PERIOD <from_date> <from_time> <to_date> <to_time>: trong khoảng thời gian từ <from_date> <from_time> đến <to_date> <to_time> hãy tìm thời điểm (<date>, <time>) mà tại đó tổng lượng hàng đc giao là lớn nhất. Trả về lượng hàng đó
- +) TOTAL_TRIPS: trả về số lượng các chuyến giao hàng đã có trong dữ liệu
- +) TRAVEL_TIME_TRIP <trip_code>: trả vể thời gian làm việc (theo đơn vị giây)của chuyến giao hàng có mã <trip_code>
- +) MAX_CONFLICT_TRIP: tìm 1 tập các chuyến đi lấy trong cơ sở dữ liệu sao cho bất kì 2 chuyến đi nào thuộc tập cx có khoảng thời gian làm việc trùng nhau và số lượng chuyến đi trong tập là max. trả về số lg chuyến đi có trong tập tìm dc (số chuyến trong dữ liệu input đối vs truy vấn này ko quá 20)
+  3. Phần thứ 3 chứa các câu truy vấn (số lg câu truy vấn có thể lên 10000). truy vấn bao gồm nhiều dòng, mỗi dòng là thông tin về 1 loại truy vấn
+    +) TOTAL_QTY: trả về tổng số lg gói hàng mà tất cả các chuyến giao hàng có trong dữ liệu đã giao
+    +) QTY_CUSTOMER <customer_code>: trả về tổng số lg gói hàng đã giao dc cho khách hàng có mã <customer_code>
+    +) QTY_MAX_PERIOD <from_date> <from_time> <to_date> <to_time>: trong khoảng thời gian từ <from_date> <from_time> đến <to_date> <to_time> hãy tìm thời điểm 
+       (<date>, <time>) mà tại đó tổng lượng hàng đc giao là lớn nhất. Trả về lượng hàng đó
+    +) TOTAL_TRIPS: trả về số lượng các chuyến giao hàng đã có trong dữ liệu
+    +) TRAVEL_TIME_TRIP <trip_code>: trả vể thời gian làm việc (theo đơn vị giây)của chuyến giao hàng có mã <trip_code>
+    +) MAX_CONFLICT_TRIP: tìm 1 tập các chuyến đi lấy trong cơ sở dữ liệu sao cho bất kì 2 chuyến đi nào thuộc tập cx có khoảng thời gian làm việc trùng nhau và 
+       số lượng chuyến đi trong tập là max. trả về số lg chuyến đi có trong tập tìm dc (số chuyến trong dữ liệu input đối vs truy vấn này ko quá 20)
 
-OUTPUT: mỗi dòng chứa kq 1 truy vấn trong INPUT
+OUTPUT: Mỗi dòng chứa kq 1 truy vấn trong INPUT
 
 VD: 
-in: 2020-01-02
-2020-01-03
-2020-01-04
-*
-TR00000005 C000000002 2020-01-03 12:10:36 80
-TR00000010 C000000002 2020-01-02 04:33:22 50
-TR00000004 C000000001 2020-01-04 11:23:54 50
-TR00000009 C000000001 2020-01-04 00:38:06 40
-TR00000006 C000000001 2020-01-04 21:09:44 40
-TR00000002 C000000001 2020-01-04 09:11:09 90
-TR00000007 C000000002 2020-01-02 18:30:25 100
-TR00000003 C000000001 2020-01-03 22:23:23 30
-TR00000004 C000000001 2020-01-04 10:53:54 30
-TR00000001 C000000002 2020-01-02 23:25:24 100
-TR00000008 C000000001 2020-01-04 17:17:49 20
-TR00000008 C000000001 2020-01-04 17:47:49 100
-TR00000002 C000000001 2020-01-04 08:41:09 80
-TR00000006 C000000001 2020-01-04 20:39:44 50
-***
-TRAVEL_TIME_TRIP TR00000008
-TRAVEL_TIME_TRIP TR00000002
-TRAVEL_TIME_TRIP TR00000006
-***
+INPUT: 2020-01-02
+       2020-01-03
+       2020-01-04
+       *
+       TR00000005 C000000002 2020-01-03 12:10:36 80
+       TR00000010 C000000002 2020-01-02 04:33:22 50
+       TR00000004 C000000001 2020-01-04 11:23:54 50
+       TR00000009 C000000001 2020-01-04 00:38:06 40
+       TR00000006 C000000001 2020-01-04 21:09:44 40
+       TR00000002 C000000001 2020-01-04 09:11:09 90
+       TR00000007 C000000002 2020-01-02 18:30:25 100
+       TR00000003 C000000001 2020-01-03 22:23:23 30
+       TR00000004 C000000001 2020-01-04 10:53:54 30
+       TR00000001 C000000002 2020-01-02 23:25:24 100
+       TR00000008 C000000001 2020-01-04 17:17:49 20
+       TR00000008 C000000001 2020-01-04 17:47:49 100
+       TR00000002 C000000001 2020-01-04 08:41:09 80
+       TR00000006 C000000001 2020-01-04 20:39:44 50
+       ***
+       TRAVEL_TIME_TRIP TR00000008
+       TRAVEL_TIME_TRIP TR00000002
+       TRAVEL_TIME_TRIP TR00000006
+       ***
 
-out: 
-1800
-1800
-1800
+OUTPUT: 1800
+        1800
+        1800
 
 
 
