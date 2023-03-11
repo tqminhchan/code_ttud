@@ -1,4 +1,4 @@
-Bài 1:
+Bài 1: Steiner Tree
  1 mạng truyền thông G bao gồm N máy chủ 1,2,..N đc kết nối với nhau bởi M đường truyền (2 chiều). giữa 2 máy chủ i và j có thể có đường truyền hoặc ko có. Trong trg hợp giữa 2 máy chủ i, j có đg truyền thì c(i,j) là chi phí thuê đg truyền này.
 Một công ti cần tính toán phương án thuê 1 số đg truyền nào đó của mạng G để kết nối liên thông 1 số máy chủ trong tập R ( R là tập con của (1,2,3,...N)). hãy tính toán phương án thuê đg truyền với tổng chi phí thuê ít nhất.
 Input: - dòng 1: 2 số nguyên dg N, M
